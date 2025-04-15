@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Select Branch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #f3ec78, #af4261);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+    label {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+      display: block;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #af4261;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+    select:focus {
+      border-color: #f3ec78;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #af4261;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #f3ec78;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label for="branch">Select Branch:</label>
+    <select id="branch" name="branch">
+      <option value="">--Select a branch--</option>
+      <option value="chennai">CHENNAI</option>
+      <option value="bangalore">BANGALORE</option>
+      <option value="cochin">COCHIN</option>
+      <option value="coimbatore">COIMBATORE</option>
+      <option value="hyderabad">HYDERABAD</option>
+    </select>
+    <button type="button" onclick="redirectPage()">Submit</button>
+  </form>
+
+  <script>
+    function redirectPage() {
+      var branch = document.getElementById("branch").value;
+      if (branch === "bangalore") {
+        // Redirect to the fee quote page for Bangalore
+        window.location.href = "bangalore_quote.html";
+      } else if (branch === "chennai") {
+        window.location.href = "chennai_quote.html";
+      } else if (branch === "cochin") {
+        window.location.href = "cochin_quote.html";
+      } else if (branch === "coimbatore") {
+        window.location.href = "coimbatore_quote.html";
+      } else if (branch === "hyderabad") {
+        window.location.href = "hyderabad_quote.html";
+      } else {
+        alert("Please select a branch.");
+      }
+    }
+  </script>
+</body>
+</html>
