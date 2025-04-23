@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Patent Fee Quote</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #6a11cb, #2575fc); /* Blue gradient */
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 900px;
+      overflow-x: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+      font-size: 14px;
+    }
+    th {
+      background-color: #2575fc; /* Blue */
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .back-btn {
+      margin-top: 20px;
+      display: block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #2575fc; /* Blue */
+      color: #fff;
+      border-radius: 5px;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      transition: background 0.3s ease;
+    }
+    .back-btn:hover {
+      background-color: #6a11cb; /* Purple */
+      color: #fff;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #ddd;
+      margin: 20px 0;
+    }
+    .section-title {
+      font-size: 1.5em;
+      text-align: center;
+      background-color: #00008B; /* Blue */
+      color: white;
+      padding: 10px 0;
+      margin: 0;
+    }
+    .header-row {
+      text-align: center;
+      font-size: 1.25em;
+      font-weight: bold;
+      background-color: #2575fc;
+      color: white;
+    }
+    /* Light blue background for Filing Stage, Prosecution Stage, Maintenance Stage, and Others rows with black text */
+    .light-blue-background {
+      background-color: #ADD8E6; /* Light blue */
+      color: black; /* Text color set to black */
+      font-weight: bold;
+      text-align: center;
+    }
+    .professional-fees-title {
+      font-size: 1.2em; /* Reduced font size */
+      color: #ff6347; /* A different color, tomato red */
+      text-align: left; /* Align it to the left */
+      padding-left: 10px; /* Add some left padding */
+    }
+    .government-fees-title {
+      font-size: 1.2em; /* Reduced font size */
+      color: #ff6347; /* A different color, tomato red */
+      text-align: left; /* Align it to the left */
+      padding-left: 10px; /* Add some left padding */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Patent Fee Quote</h1>
+
+    <!-- Section Title A. Professional Fees Schedule with different color and reduced font size -->
+    <div class="professional-fees-title">A. Professional Fees Schedule:</div>
+
+    <!-- Altacit Global Professional Fees (India) -->
+    <div class="section-title">Altacit Global Professional Fees (India)</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Service</th>
+          <th>Professional Fees in INR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Drafting Provisional Specification</td>
+          <td>₹ 20,000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Filing Provisional Patent Application</td>
+          <td>₹ 15,000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Patent Prior Art Search</td>
+          <td>₹ 30,000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Drafting Complete Specification</td>
+          <td>₹ 80,000</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Filing Complete Patent Application</td>
+          <td>₹ 20,000</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Request For Early Publication</td>
+          <td>₹ 5,000</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Request For Examination</td>
+          <td>₹ 5,000</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Request For Expedited Examination</td>
+          <td>₹ 5,000</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Form 28</td>
+          <td>₹ 3,000</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Filing National Biodiversity Authority (NBA) Application</td>
+          <td>₹ 5,000</td>
+        </tr>
+
+        <!-- Prosecution Stage background row -->
+        <tr>
+          <td colspan="3" class="light-blue-background">Prosecution Stage</td>
+        </tr>
+
+        <tr>
+          <td>11</td>
+          <td>Analyze & Report First Examination Report</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Request for Extension of Time</td>
+          <td>₹ 3,000 to ₹ 5,000</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Preparing Response to Examination Report</td>
+          <td>₹ 35,000</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Form 3 Update</td>
+          <td>₹ 5,000</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Attending Hearing</td>
+          <td>₹ 5,000</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Preparing and Filing Hearing Compliance</td>
+          <td>₹ 30,000</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Reporting Grant Certificate</td>
+          <td>₹ 5,000</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="light-blue-background">Maintenance Stage</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Renewal of Patent (per payment)</td>
+          <td>₹ 5,000</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Filing Form 27 (per year)</td>
+          <td>₹ 5,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr> <!-- Line to separate Section B -->
+
+    <!-- Section Title B. Government Fees Schedule with different color and reduced font size -->
+    <div class="government-fees-title">B. Government Fees Schedule</div>
+    <div class="section-title">Indian Patent Office Fees (INR)</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Service</th>
+          <th>For Individual | Startup | Small Entity | Educational Institution</th>
+          <th>For Others</th>
+          <th>Remark</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Light Blue Background for Filing Stage -->
+        <tr>
+          <td colspan="5" class="light-blue-background">Filing Stage</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Application for Filing a Patent</td>
+          <td>₹ 1,600</td>
+          <td>₹ 8,000</td>
+          <td>Mandatory</td>
+        </tr>
+        <tr>
+          <td>1.1</td>
+          <td>For each extra page of specification above 30</td>
+          <td>₹ 160</td>
+          <td>₹ 800</td>
+          <td>Mandatory</td>
+        </tr>
+        <tr>
+          <td>1.2</td>
+          <td>For each claim above 10</td>
+          <td>₹ 320</td>
+          <td>₹ 1,600</td>
+          <td>Mandatory</td>
+        </tr>
+        <tr>
+          <td>1.3</td>
+          <td>For each page of sequence listing</td>
+          <td>₹ 160</td>
+          <td>₹ 800</td>
+          <td>Mandatory</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Request For Early Publication</td>
+          <td>₹ 2,500</td>
+          <td>₹ 12,500</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Request For Examination</td>
+          <td>₹ 4,000</td>
+          <td>₹ 20,000</td>
+          <td>Mandatory</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Request For Expedited Examination</td>
+          <td>₹ 8,000</td>
+          <td>₹ 60,000</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Filing National Biodiversity Authority (NBA) Application</td>
+          <td>₹ 500</td>
+          <td>₹ 500</td>
+          <td>Depends on the Invention</td>
+        </tr>
+        <!-- Light Blue Background for Others -->
+        <tr>
+          <td colspan="5" class="light-blue-background">Others</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Request For Extension of Time</td>
+          <td>₹ 480 to ₹ 2,000</td>
+          <td>₹ 2,400 to ₹ 10,000</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Post Grant Opposition</td>
+          <td>₹ 2,400</td>
+          <td>₹ 12,000</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Renewal of Patent</td>
+          <td>3rd to 6th year ₹ 800</td>
+          <td>₹ 4,000</td>
+          <td>Mandatory</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>7th to 10th year ₹ 2,400</td>
+          <td>₹ 12,000</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>11th to 15th year ₹ 4,800</td>
+          <td>₹ 24,000</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>16th to 20th year ₹ 8,000</td>
+          <td>₹ 40,000</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr> <!-- Line to separate Section C -->
+
+     <div class="government-fees-title">PCT International Patent Application</div>
+    <div class="section-title">PCT International Patent Application Fees</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Government Fees*</th>
+          <th>Our Professional Fees</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>International Filing</td>
+          <td>USD 1500</td>
+          <td>INR 40,000</td>
+        </tr>
+        <tr>
+          <tr>
+          <td colspan="5" class="light-blue-background">International Search Authority Fees</td>
+        </tr>
+          <td>Indian Patent Office</td>
+          <td>INR 10,000</td><td></td>
+         
+        </tr>
+        <tr>
+          <td>Austrian Patent Office</td>
+          <td>USD 2,091</td><td></td>
+        </tr>
+        <tr>
+          <td>Australian Patent Office</td>
+          <td>USD 1,697</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>China Patent Office</td>
+          <td>SD 328</td><td></td>
+        </tr>
+        <tr>
+          <td>European Patent Office</td>
+          <td>USD 2,091</td><td></td>
+        </tr>
+        <tr>
+          <td>Swedish Patent Office</td>
+          <td>USD 2,091</td><td></td>
+        </tr>
+        <tr>
+         <td>United States Patent Office</td>
+          <td>USD 2,180</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="#" class="back-btn">Back</a>
+  </div>
+</body>
+</html>
