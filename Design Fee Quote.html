@@ -11,10 +11,23 @@
             background-color: #f5f7fa;
             text-align: center;
         }
+        .download-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #3498db;
+            font-size: 1em;
+        }
+        .download-link img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
         table {
             width: 80%;
             border-collapse: collapse;
-            margin: 0 auto 20px;
+            margin: 0 auto;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         caption {
@@ -94,5 +107,10 @@
             </tr>
         </tbody>
     </table>
+    <!-- PDF Download Link: place 'design-registration.pdf' and 'pdf-icon.png' in the same directory -->
+    <a href="design-registration.pdf" download class="download-link">
+        <img src="pdf-icon.png" alt="PDF Icon">
+        Download PDF
+    </a>
 </body>
 </html>
