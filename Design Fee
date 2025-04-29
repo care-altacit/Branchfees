@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Registration Commercials in India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f7fa;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #ecf6fc;
+        }
+        tbody tr:hover {
+            background-color: #d0e9f9;
+        }
+        th[colspan] {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Commercials for Design Registration in India (INR)</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">S. No.</th>
+                <th rowspan="2">Services</th>
+                <th rowspan="2">Professional Fee (INR)</th>
+                <th colspan="2">Government Fee (INR)</th>
+            </tr>
+            <tr>
+                <th>Natural Person/Individual/Small Entity (MSME Holder)</th>
+                <th>Other than Natural Person(s)/Large Entity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Drafting and filing Design application</td>
+                <td>10,000/-</td>
+                <td>1,000/-</td>
+                <td>4,000/-</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Reporting, advising, drafting and filing response to the Examination/compliance Report (if it occurs)</td>
+                <td>4,000/-</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hearing (if it occurs)</td>
+                <td>3,000/-</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Checking for errors and reporting the Design Certificate</td>
+                <td>5,000/-</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
