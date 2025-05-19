@@ -78,7 +78,7 @@
     <select id="branch" name="branch" required>
       <option value="">-- Select a branch --</option>
       <option value="chennai">CHENNAI</option>
-      <option value="bangalore">BANGALORE</option>
+      <option value="trademark">TRADEMARK</option>
       <option value="cochin">COCHIN</option>
       <option value="coimbatore">COIMBATORE</option>
       <option value="hyderabad">HYDERABAD</option>
@@ -90,7 +90,7 @@
    <script>
     function redirectPage() {
       var branch = document.getElementById("branch").value;
-      if (branch === "bangalore") {
+      if (branch === "trademark") {
         // Redirect to the fee quote page for Bangalore
         window.location.href = "bangalore_quote.html";
       } else if (branch === "chennai") {
