@@ -87,18 +87,6 @@
     <button id="back-btn" type="button" onclick="goBack()">Back to Services</button>
   </form>
 
-  <script>
-    function redirectPage() {
-      const branch = document.getElementById('branch').value;
-      if (!branch) {
-        alert('Please select a branch.');
-        return;
-      }
-      window.location.href = branch + '_quote.html';
-    }
-    function goBack() {
-      window.location.href = 'services.html';
-    }
-  </script>
+  
 </body>
 </html>
