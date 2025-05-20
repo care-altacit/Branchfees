@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Altacit Global – Litigation Schedule of Fees</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altacit Global – Litigation Schedule of Fees (India)</title>
   <style>
+    :root {
+      --primary-color: #0d47a1;
+      --secondary-color: #2196f3;
+      --background: #e3f2fd;
+      --text-color: #2c3e50;
+      --table-bg: #fff;
+      --header-bg: #3498db;
+      --row-even-bg: #ecf6fc;
+      --row-hover-bg: #d0e9f9;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
     body {
+      margin: 0;
       font-family: 'Comic Sans MS', cursive, sans-serif;
-      margin: 20px;
-      background-color: #e3f2fd;
+      background-color: var(--background);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .container {
+      background: var(--table-bg);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 800px;
       text-align: center;
     }
+    h1 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
     table {
-      width: 80%;
-      max-width: 800px;
-      margin: 0 auto 20px;
+      width: 100%;
       border-collapse: collapse;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      background-color: #fff;
+      margin-bottom: 1rem;
     }
     caption {
       caption-side: top;
       font-size: 1.4em;
       font-weight: bold;
-      margin: 15px 0;
-      color: #2c3e50;
+      margin-bottom: 0.5rem;
     }
     th, td {
       border: 1px solid #ddd;
@@ -32,96 +57,104 @@
       text-align: center;
     }
     th {
-      background-color: #3498db;
-      color: #ffffff;
-    }
-    tbody tr:nth-child(odd) {
-      background-color: #ffffff;
+      background-color: var(--header-bg);
+      color: #fff;
     }
     tbody tr:nth-child(even) {
-      background-color: #ecf6fc;
+      background-color: var(--row-even-bg);
     }
     tbody tr:hover {
-      background-color: #d0e9f9;
+      background-color: var(--row-hover-bg);
     }
     .notes {
-      width: 80%;
-      max-width: 800px;
-      margin: 0 auto;
       text-align: left;
-      color: #2c3e50;
+      font-size: 0.9em;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
     }
-    .notes ul {
-      list-style: disc;
-      padding-left: 20px;
-      margin: 0;
+    #back-button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: 1px solid var(--primary-color);
+      border-radius: 4px;
+      background-color: var(--primary-color);
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
     }
-    .notes li {
-      margin: 8px 0;
+    #back-button:hover {
+      background-color: #0b3c91;
     }
   </style>
 </head>
 <body>
-
-  <table>
-    <caption>LITIGATION SCHEDULE OF FEES</caption>
-    <thead>
-      <tr>
-        <th>Sl. No.</th>
-        <th>Nature of Work</th>
-        <th>Fees (INR)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1.</td>
-        <td>Strategizing, advising, drafting and filing of Written Statement.</td>
-        <td>Rs. 3,00,000/-</td>
-      </tr>
-      <tr>
-        <td>2.</td>
-        <td>Drafting Rejoinder</td>
-        <td>Rs. 50,000/-</td>
-      </tr>
-      <tr>
-        <td>3.</td>
-        <td>Drafting applications/petitions, appeals, written arguments, synopsis (per drafting)</td>
-        <td>Rs. 30,000/-</td>
-      </tr>
-      <tr>
-        <td>4.</td>
-        <td>Appearance in Arbitration / Courts / Tribunals<br><em>(Including alongside instructing Senior Counsel, if any)*</em></td>
-        <td>Rs. 30,000/- per appearance up to 3 hours</td>
-      </tr>
-      <tr>
-        <td>5.</td>
-        <td>Full day hearings and evidence<br><em>(Applicable for hearings involving more than 3 hours of time)</em></td>
-        <td>Rs. 60,000/- per day</td>
-      </tr>
-      <tr>
-        <td>6.</td>
-        <td>Towards Clerkage</td>
-        <td>Rs. 20,000/-</td>
-      </tr>
-      <tr>
-        <td>7.</td>
-        <td>Client conferences (includes conference calls, discussions on the matter etc.)</td>
-        <td>Rs. 7,500/- per hour [Blended Rate]</td>
-      </tr>
-      <tr>
-        <td>8.</td>
-        <td>Senior Counsel fees for appearances and/or conferences in chambers (if any)</td>
-        <td>Chargeable on actual basis directly to Client (varies by Senior Counsel)</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="notes">
-    <strong>Note:</strong>
-    <ul>
-      <li>All filing fees, printing, attestation and out‐of‐pocket expenses are reimbursable at actuals.</li>
-    </ul>
+  <div class="container" role="main">
+    <h1>Litigation Schedule of Fees – India</h1>
+    <table>
+      <caption>Schedule of Fees (INR)</caption>
+      <thead>
+        <tr>
+          <th>Sl. No.</th>
+          <th>Nature of Work</th>
+          <th>Fees (INR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Strategizing, advising, drafting and filing of Written Statement.</td>
+          <td>₹3,00,000</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Drafting Rejoinder</td>
+          <td>₹50,000</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Drafting applications/petitions, appeals, written arguments, synopsis (per drafting)</td>
+          <td>₹30,000</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Appearance in Arbitration / Courts / Tribunals<br><em>(Including alongside instructing Senior Counsel, if any)</em></td>
+          <td>₹30,000 per appearance (up to 3 hrs)</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Full day hearings and evidence<br><em>(Applicable for hearings over 3 hrs)</em></td>
+          <td>₹60,000 per day</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>Towards Clerkage</td>
+          <td>₹20,000</td>
+        </tr>
+        <tr>
+          <td>7.</td>
+          <td>Client conferences (conference calls, discussions, etc.)</td>
+          <td>₹7,500 per hour [Blended Rate]</td>
+        </tr>
+        <tr>
+          <td>8.</td>
+          <td>Senior Counsel fees for appearances and/or conferences in chambers (if any)</td>
+          <td>Chargeable at actuals (varies by Counsel)</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="notes">
+      <strong>Note:</strong>
+      <ul>
+        <li>All filing fees, printing, attestation and out-of-pocket expenses are reimbursable at actuals.</li>
+      </ul>
+    </div>
+    <button id="back-button" aria-label="Go to Home">Back</button>
   </div>
-
+  <script>
+    document.getElementById('back-button').addEventListener('click', function() {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
