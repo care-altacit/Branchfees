@@ -34,11 +34,11 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       width: 100%;
       max-width: 800px;
+      text-align: center;
     }
     h1 {
       margin-bottom: 1rem;
       color: var(--primary-color);
-      text-align: center;
     }
     table {
       width: 100%;
@@ -70,6 +70,22 @@
       color: var(--text-color);
       font-size: 0.9em;
       line-height: 1.4;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+    #back-button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: 1px solid var(--primary-color);
+      border-radius: 4px;
+      background-color: var(--primary-color);
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    #back-button:hover {
+      background-color: #0b3c91;
     }
   </style>
 </head>
@@ -144,6 +160,12 @@
       <strong>Note:</strong>
       <p>All filing fees, printing, attestation and out-of-pocket expenses are reimbursable at actuals.</p>
     </div>
+    <button id="back-button" aria-label="Go to Home">Back</button>
   </div>
+  <script>
+    document.getElementById('back-button').addEventListener('click', function() {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
