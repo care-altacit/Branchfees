@@ -10,6 +10,7 @@
       margin: 20px;
       background-color: #f5f7fa;
       text-align: center;
+      font-weight: bold;
     }
     table {
       width: 80%;
@@ -31,11 +32,13 @@
       padding: 12px;
       text-align: center;
       font-family: inherit;
+      font-weight: inherit;
     }
     th {
       background-color: #3498db;
       color: #ffffff;
       font-family: inherit;
+      font-weight: inherit;
     }
     tbody tr:nth-child(odd) {
       background-color: #ffffff;
@@ -54,11 +57,27 @@
       color: #3498db;
       font-size: 1em;
       font-family: inherit;
+      font-weight: inherit;
     }
     .download-link img {
       width: 24px;
       height: 24px;
       margin-right: 8px;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0d47a1;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: inherit;
+      font-weight: inherit;
+      transition: background-color 0.3s ease;
+    }
+    .back-btn:hover {
+      background-color: #1976d2;
     }
   </style>
 </head>
@@ -81,7 +100,7 @@
         </td>
         <td>10,000/-</td>
         <td>
-          <ul style="list-style: none; padding-left: 0; margin: 0; font-family: inherit;">
+          <ul style="list-style: none; padding-left: 0; margin: 0; font-family: inherit; font-weight: inherit;">
             <li>INR 500 – Literary work</li>
             <li>INR 2,000 – Artistic work</li>
           </ul>
@@ -104,5 +123,10 @@
       </tr>
     </tbody>
   </table>
+  <!-- Optional: download link if needed -->
+  <!-- <a href="copyright-registration.pdf" download class="download-link">
+    <img src="download-icon.png" alt="PDF Icon" />Download PDF
+  </a> -->
+  <a href="index.html" class="back-btn">Back to Services</a>
 </body>
 </html>
