@@ -13,6 +13,11 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      flex-direction: column;
+    }
+    #logo {
+      max-width: 200px;
+      margin-bottom: 20px;
     }
     form {
       background-color: rgba(255, 255, 255, 0.9);
@@ -73,6 +78,8 @@
   </style>
 </head>
 <body>
+  <!-- Place 'logo.png' in the same directory -->
+  <img src="logo.png" alt="Altacit Global Logo" id="logo" />
   <form id="branch-form">
     <label for="branch">Select Branch:</label>
     <select id="branch" name="branch" required>
@@ -84,14 +91,12 @@
       <option value="legal">LEGAL</option>
     </select>
     <button id="submit-btn" type="button" onclick="redirectPage()">Submit</button>
-    
   </form>
 
-   <script>
+  <script>
     function redirectPage() {
       var branch = document.getElementById("branch").value;
       if (branch === "trademark") {
-        // Redirect to the fee quote page for Bangalore
         window.location.href = "bangalore_quote.html";
       } else if (branch === "design") {
         window.location.href = "Design Fee Quote.html";
