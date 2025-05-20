@@ -76,15 +76,15 @@
   <form id="branch-form">
     <label for="branch">Select Branch:</label>
     <select id="branch" name="branch" required>
-      <option value="">-- Select a branch --</option>
-      <option value="chennai">CHENNAI</option>
+      <option value="">-- Select Service --</option>
+      <option value="design">DESIGN</option>
       <option value="trademark">TRADEMARK</option>
-      <option value="cochin">COCHIN</option>
-      <option value="coimbatore">COIMBATORE</option>
-      <option value="hyderabad">HYDERABAD</option>
+      <option value="copyright">COPYRIGHT</option>
+      <option value="patent">PATENT</option>
+      <option value="legal">LEGAL</option>
     </select>
     <button id="submit-btn" type="button" onclick="redirectPage()">Submit</button>
-    <button id="back-btn" type="button" onclick="goBack()">Back to Services</button>
+    
   </form>
 
    <script>
@@ -93,16 +93,16 @@
       if (branch === "trademark") {
         // Redirect to the fee quote page for Bangalore
         window.location.href = "bangalore_quote.html";
-      } else if (branch === "chennai") {
-        window.location.href = "chennai_quote.html";
-      } else if (branch === "cochin") {
-        window.location.href = "cochin_quote.html";
-      } else if (branch === "coimbatore") {
-        window.location.href = "coimbatore_quote.html";
-      } else if (branch === "hyderabad") {
-        window.location.href = "hyderabad_quote.html";
+      } else if (branch === "design") {
+        window.location.href = "Design Fee Quote.html";
+      } else if (branch === "copyright") {
+        window.location.href = "Copyright.html";
+      } else if (branch === "patent") {
+        window.location.href = "patent fees quote.html";
+      } else if (branch === "legal") {
+        window.location.href = "Legal Fee Type.html";
       } else {
-        alert("Please select a branch.");
+        alert("Please select a Service.");
       }
     }
   </script>
