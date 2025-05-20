@@ -72,7 +72,7 @@
       line-height: 1.4;
       margin-bottom: 1.5rem;
     }
-    #back-button {
+    .btn {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
       border: 1px solid var(--primary-color);
@@ -82,9 +82,16 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
       font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0 0.5rem;
     }
-    #back-button:hover {
+    .btn:hover {
       background-color: #0b3c91;
+    }
+    .button-group {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
     }
   </style>
 </head>
@@ -149,11 +156,17 @@
         <li>All filing fees, printing, attestation and out-of-pocket expenses are reimbursable at actuals.</li>
       </ul>
     </div>
-    <button id="back-button" aria-label="Go to Home">Back</button>
+    <div class="button-group">
+      <button id="back-button" class="btn" aria-label="Go to Home">Back</button>
+      <button id="main-section-button" class="btn" aria-label="Back to Main Section">Back to Main Section</button>
+    </div>
   </div>
   <script>
     document.getElementById('back-button').addEventListener('click', function() {
       window.location.href = 'index.html';
+    });
+    document.getElementById('main-section-button').addEventListener('click', function() {
+      window.location.href = 'Legal Fee Type.html';
     });
   </script>
 </body>
