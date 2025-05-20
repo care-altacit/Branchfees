@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Altacit Global – Statement of Claim Schedule of Fees</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altacit Global – Arbitration Schedule of Fees</title>
   <style>
+    :root {
+      --primary-color: #0d47a1;
+      --secondary-color: #2196f3;
+      --background: #eef7fd;
+      --text-color: #333;
+      --table-bg: #fff;
+      --table-header-bg: #3498db;
+      --row-even-bg: #ecf6fc;
+      --row-hover-bg: #d0e9f9;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f5f7fa;
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: var(--background);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .container {
+      background: var(--table-bg);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 800px;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
       text-align: center;
     }
     table {
-      width: 80%;
-      max-width: 800px;
-      margin: 0 auto 20px;
+      width: 100%;
       border-collapse: collapse;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      background-color: #fff;
+      margin-bottom: 1rem;
     }
     caption {
       caption-side: top;
       font-size: 1.4em;
       font-weight: bold;
-      margin: 15px 0;
-      color: #2c3e50;
+      margin-bottom: 0.5rem;
     }
     th, td {
       border: 1px solid #ddd;
@@ -32,107 +57,93 @@
       text-align: center;
     }
     th {
-      background-color: #3498db;
-      color: #ffffff;
-    }
-    tbody tr:nth-child(odd) {
-      background-color: #ffffff;
+      background-color: var(--table-header-bg);
+      color: #fff;
     }
     tbody tr:nth-child(even) {
-      background-color: #ecf6fc;
+      background-color: var(--row-even-bg);
     }
     tbody tr:hover {
-      background-color: #d0e9f9;
+      background-color: var(--row-hover-bg);
     }
     .notes {
-      width: 80%;
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: left;
-      color: #2c3e50;
-    }
-    .notes ul {
-      list-style: disc;
-      padding-left: 20px;
-      margin: 0;
-    }
-    .notes li {
-      margin: 8px 0;
+      color: var(--text-color);
+      font-size: 0.9em;
+      line-height: 1.4;
     }
   </style>
 </head>
 <body>
-
-  <table>
-    <caption>Arbitration Litigation Schedule
-
-of Fees</caption>
-    <thead>
-      <tr>
-        <th>Sl. No.</th>
-        <th>Nature of Work</th>
-        <th>Fees (EUR)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1.</td>
-        <td>Strategizing, advising, drafting and filing of Statement of Claim.</td>
-        <td>€5,000/-</td>
-      </tr>
-      <tr>
-        <td>2.</td>
-        <td>Drafting Rejoinder</td>
-        <td>€1,200/-</td>
-      </tr>
-      <tr>
-        <td>3.</td>
-        <td>Drafting applications/petitions, appeals, written arguments, synopsis (per drafting)</td>
-        <td>€750/-</td>
-      </tr>
-      <tr>
-        <td>4.</td>
-        <td>
-          Appearance in Arbitration / Courts / Tribunals<br>
-          <em>(Including alongside instructing Senior Counsel, if any)*</em>
-        </td>
-        <td>
-          €750/- per effective appearance (up to 3 hrs)<br>
-          €150/- per non-effective appearance
-        </td>
-      </tr>
-      <tr>
-        <td>5.</td>
-        <td>
-          Full day hearings and evidence<br>
-          <em>(Applicable for hearings over 3 hrs)</em>
-        </td>
-        <td>€850/- per day</td>
-      </tr>
-      <tr>
-        <td>6.</td>
-        <td>Towards Clerkage</td>
-        <td>€350/-</td>
-      </tr>
-      <tr>
-        <td>7.</td>
-        <td>Client conferences (conference calls, discussions, etc.)</td>
-        <td>€100/- per hour [Blended Rate]</td>
-      </tr>
-      <tr>
-        <td>8.</td>
-        <td>Senior Counsel fees for appearances and/or conferences in chambers (if any)</td>
-        <td>€3,500 – €5,000 per hearing<br><small>(Chargeable on actual basis; varies by Counsel)</small></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="notes">
-    <strong>Note:</strong>
-    <ul>
-      <li>All filing fees, printing, attestation and out-of-pocket expenses are reimbursable at actuals.</li>
-    </ul>
+  <div class="container" role="main">
+    <h1>Arbitration Litigation Schedule of Fees</h1>
+    <table>
+      <caption>Schedule of Fees (EUR)</caption>
+      <thead>
+        <tr>
+          <th>Sl. No.</th>
+          <th>Nature of Work</th>
+          <th>Fees (EUR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Strategizing, advising, drafting and filing of Statement of Claim.</td>
+          <td>€5,000</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Drafting Rejoinder</td>
+          <td>€1,200</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Drafting applications/petitions, appeals, written arguments, synopsis (per drafting)</td>
+          <td>€750</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>
+            Appearance in Arbitration / Courts / Tribunals<br>
+            <em>(Including alongside instructing Senior Counsel, if any)</em>
+          </td>
+          <td>
+            €750 per effective appearance (up to 3 hrs)<br>
+            €150 per non-effective appearance
+          </td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>
+            Full day hearings and evidence<br>
+            <em>(Applicable for hearings over 3 hrs)</em>
+          </td>
+          <td>€850 per day</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>Towards Clerkage</td>
+          <td>€350</td>
+        </tr>
+        <tr>
+          <td>7.</td>
+          <td>Client conferences (conference calls, discussions, etc.)</td>
+          <td>€100 per hour [Blended Rate]</td>
+        </tr>
+        <tr>
+          <td>8.</td>
+          <td>Senior Counsel fees for appearances and/or conferences in chambers (if any)</td>
+          <td>
+            €3,500 – €5,000 per hearing<br>
+            <small>(Chargeable on actual basis; varies by Counsel)</small>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="notes">
+      <strong>Note:</strong>
+      <p>All filing fees, printing, attestation and out-of-pocket expenses are reimbursable at actuals.</p>
+    </div>
   </div>
-
 </body>
 </html>
