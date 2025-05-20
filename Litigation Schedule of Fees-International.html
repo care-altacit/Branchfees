@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Altacit Global – Arbitration Schedule of Fees</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altacit Global – Litigation Schedule of Fees (International)</title>
   <style>
+    :root {
+      --primary-color: #0d47a1;
+      --secondary-color: #2196f3;
+      --background: #e3f2fd;
+      --text-color: #2c3e50;
+      --table-bg: #fff;
+      --header-bg: #3498db;
+      --row-even-bg: #ecf6fc;
+      --row-hover-bg: #d0e9f9;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
     body {
-     font-family: 'Comic Sans MS', cursive, sans-serif;
-      margin: 20px;
-      background-color: #e3f2fd;
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: var(--background);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .container {
+      background: var(--table-bg);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 800px;
       text-align: center;
     }
+    h1 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
     table {
-      width: 80%;
-      max-width: 800px;
-      margin: 0 auto 20px;
+      width: 100%;
       border-collapse: collapse;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      background-color: #fff;
+      margin-bottom: 1rem;
     }
     caption {
       caption-side: top;
       font-size: 1.4em;
       font-weight: bold;
-      margin: 15px 0;
-      color: #2c3e50;
+      margin-bottom: 0.5rem;
     }
     th, td {
       border: 1px solid #ddd;
@@ -32,109 +57,103 @@
       text-align: center;
     }
     th {
-      background-color: #3498db;
-      color: #ffffff;
-    }
-    tbody tr:nth-child(odd) {
-      background-color: #ffffff;
+      background-color: var(--header-bg);
+      color: #fff;
     }
     tbody tr:nth-child(even) {
-      background-color: #ecf6fc;
+      background-color: var(--row-even-bg);
     }
     tbody tr:hover {
-      background-color: #d0e9f9;
+      background-color: var(--row-hover-bg);
     }
     .notes {
-      width: 80%;
-      max-width: 800px;
-      margin: 0 auto;
       text-align: left;
-      color: #2c3e50;
+      font-size: 0.9em;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
     }
-    .notes ul {
-      list-style: disc;
-      padding-left: 20px;
-      margin: 0;
+    .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: 1px solid var(--primary-color);
+      border-radius: 4px;
+      background-color: var(--primary-color);
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0 0.5rem;
     }
-    .notes li {
-      margin: 8px 0;
+    .btn:hover {
+      background-color: #0b3c91;
+    }
+    .button-group {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
     }
   </style>
 </head>
 <body>
-
-  <table>
-    <caption>Litigation Schedule of Fees-International</caption>
-    <thead>
-      <tr>
-        <th>Sl. No.</th>
-        <th>Nature of Work</th>
-        <th>Fees (EUR)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1.</td>
-        <td>Strategizing, advising, drafting and filing of reply to the Petition.</td>
-        <td>€5,000/-</td>
-      </tr>
-      <tr>
-        <td>2.</td>
-        <td>
-          Appearance in Arbitration / Courts / Tribunals<br>
-          <em>(Including alongside instructing Senior Counsel, if any)*</em>
-        </td>
-        <td>
-          €400/- per effective appearance<br>
-          €150/- per non-effective appearance
-        </td>
-      </tr>
-      <tr>
-        <td>3.</td>
-        <td>
-          Full day hearings and evidence<br>
-          <em>(Applicable for hearings involving more than 3 hours of time)</em>
-        </td>
-        <td>€850/- per day</td>
-      </tr>
-      <tr>
-        <td>4.</td>
-        <td>
-          Drafting of pleadings and correspondences – includes notices, plaints, petitions, appeals, affidavits of evidence, applications and responses/objections thereto. All research time in relation to the matters is covered.
-        </td>
-        <td>€500/- per pleading</td>
-      </tr>
-      <tr>
-        <td>5.</td>
-        <td>
-          Client conferences (includes conference calls, discussions on the matter, etc.)
-        </td>
-        <td>€100/- per hour [Blended Rate]</td>
-      </tr>
-      <tr>
-        <td>6.</td>
-        <td>
-          Senior Counsel fees for appearances and/or conferences in chambers (if any)
-        </td>
-        <td>€3,500/- to €5,000/- per hearing<br><small>(Chargeable on actual basis; varies by Senior Counsel)</small>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="notes">
-    <strong>Note:</strong>
-    <ul>
-      <li>All filing fees, printing, attestation, and out-of-pocket expenses are reimbursable at actuals.</li>
-    </ul>
+  <div class="container" role="main">
+    <h1>Litigation Schedule of Fees – International</h1>
+    <table>
+      <caption>Schedule of Fees (EUR)</caption>
+      <thead>
+        <tr>
+          <th>Sl. No.</th>
+          <th>Nature of Work</th>
+          <th>Fees (EUR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Strategizing, advising, drafting and filing of reply to the Petition.</td>
+          <td>€5,000</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Appearance in Arbitration / Courts / Tribunals<br><em>(Including alongside instructing Senior Counsel, if any)</em></td>
+          <td>€400 per effective appearance<br>€150 per non-effective appearance</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Full day hearings and evidence<br><em>(Applicable for hearings over 3 hrs)</em></td>
+          <td>€850 per day</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Drafting pleadings and correspondences (notices, plaints, petitions, appeals, affidavits, applications, responses). Includes research time.</td>
+          <td>€500 per pleading</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Client conferences (conference calls, discussions, etc.)</td>
+          <td>€100 per hour [Blended Rate]</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>Senior Counsel fees for appearances/conferences in chambers (if any)</td>
+          <td>€3,500–€5,000 per hearing<br><small>(Actuals vary by Counsel)</small></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="notes">
+      <strong>Note:</strong>
+      <ul>
+        <li>All filing fees, printing, attestation, and out-of-pocket expenses are reimbursable at actuals.</li>
+      </ul>
+    </div>
+    <div class="button-group">
+      <button id="back-button" class="btn" aria-label="Go to Home">Back</button>
+      <button id="main-section-button" class="btn" aria-label="Back to Main Section">Back to Main Section</button>
+    </div>
   </div>
- <script>
-    document.getElementById('back-button').addEventListener('click', () => {
-      window.location.href = 'index.html';
-    });
-     document.getElementById('main-section-button').addEventListener('click', function() {
-      window.location.href = 'Legal Fee Type.html';
-    });
+  <script>
+    document.getElementById('back-button').addEventListener('click', () => { window.location.href = 'index.html'; });
+    document.getElementById('main-section-button').addEventListener('click', () => { window.location.href = 'index.html'; });
   </script>
 </body>
 </html>
