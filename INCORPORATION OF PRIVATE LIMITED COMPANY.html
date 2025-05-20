@@ -2,27 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Incorporation Fees – Private Limited Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altacit Global – Incorporation Fees</title>
   <style>
+    :root {
+      --primary-color: #0d47a1;
+      --secondary-color: #2196f3;
+      --background: #eef7fd;
+      --text-color: #333;
+      --table-bg: #fff;
+      --table-header-bg: #3498db;
+      --row-even-bg: #ecf6fc;
+      --row-hover-bg: #d0e9f9;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f5f7fa;
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: var(--background);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .container {
+      background: var(--table-bg);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 800px;
       text-align: center;
     }
+    h1 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
     table {
-      width: 80%;
-      margin: 0 auto 20px;
+      width: 100%;
       border-collapse: collapse;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
     }
     caption {
       caption-side: top;
       font-size: 1.4em;
       font-weight: bold;
-      margin-bottom: 10px;
-      color: #2c3e50;
+      margin-bottom: 0.5rem;
     }
     th, td {
       border: 1px solid #ddd;
@@ -30,74 +57,83 @@
       text-align: center;
     }
     th {
-      background-color: #3498db;
-      color: #ffffff;
-    }
-    tbody tr:nth-child(odd) {
-      background-color: #ffffff;
+      background-color: var(--table-header-bg);
+      color: #fff;
     }
     tbody tr:nth-child(even) {
-      background-color: #ecf6fc;
+      background-color: var(--row-even-bg);
     }
     tbody tr:hover {
-      background-color: #d0e9f9;
+      background-color: var(--row-hover-bg);
     }
     .notes {
-      width: 80%;
-      margin: 0 auto;
+      color: var(--text-color);
+      font-size: 0.9em;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
       text-align: left;
-      color: #2c3e50;
     }
-    .notes ul {
-      list-style: disc;
-      padding-left: 20px;
+    #back-button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: 1px solid var(--primary-color);
+      border-radius: 4px;
+      background-color: var(--primary-color);
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
     }
-    .notes li {
-      margin-bottom: 8px;
+    #back-button:hover {
+      background-color: #0b3c91;
     }
   </style>
 </head>
 <body>
-  <table>
-    <caption>INCORPORATION OF PRIVATE LIMITED COMPANY</caption>
-    <thead>
-      <tr>
-        <th>Particulars</th>
-        <th>Professional Fee (AUD)</th>
-        <th>Government / Other Fees</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          Incorporation<br>
-          <em>(Includes Form INC-32, INC-33, INC-34 &amp;<br>
-          drafting MOA &amp; AOA)</em>
-        </td>
-        <td>AUD 2,000</td>
-        <td>Chargeable additionally at actual</td>
-      </tr>
-      <tr>
-        <td>Director Identification Number</td>
-        <td>AUD 175 per Director</td>
-        <td>Chargeable additionally at actual</td>
-      </tr>
-      <tr>
-        <td>Digital Signature</td>
-        <td>AUD 175 per Director/Shareholder</td>
-        <td>Chargeable additionally at actual</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="notes">
-    <strong>Notes:</strong>
-    <ul>
-      <li>All out-of-pocket expenses and Government fees are chargeable additionally at actual.</li>
-      <li>All travel expenses are chargeable additionally at actual.</li>
-      <li><strong>Foreign Director/Shareholder:</strong> Documents must be notarized &amp; apostilled.</li>
-      <li><strong>OCI Card Holder:</strong> Documents must be notarized in India, along with VISA copy.</li>
-    </ul>
+  <div class="container" role="main">
+    <h1>Incorporation of Private Limited Company</h1>
+    <table>
+      <caption>Fees Breakdown </caption>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Professional Fee</th>
+          <th>Government / Other Fees</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Incorporation<br><em>(Form INC-32, INC-33, INC-34; MOA & AOA drafting)</em></td>
+          <td>AUD 2,000</td>
+          <td>At actuals</td>
+        </tr>
+        <tr>
+          <td>Director Identification Number</td>
+          <td>AUD 175 per Director</td>
+          <td>At actuals</td>
+        </tr>
+        <tr>
+          <td>Digital Signature</td>
+          <td>AUD 175 per Director/Shareholder</td>
+          <td>At actuals</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="notes">
+      <strong>Notes:</strong>
+      <ul>
+        <li>All out-of-pocket and Government fees are chargeable at actuals.</li>
+        <li>All travel expenses are chargeable at actuals.</li>
+        <li><strong>Foreign Director/Shareholder:</strong> Documents must be notarized & apostilled.</li>
+        <li><strong>OCI Card Holder:</strong> Documents must be notarized in India with VISA copy.</li>
+      </ul>
+    </div>
+    <button id="back-button" aria-label="Go to Home">Back</button>
   </div>
+  <script>
+    document.getElementById('back-button').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
