@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Altacit Global – Services</title>
   <style>
     body {
-      font-family: 'Comic Sans MS', cursive, sans-serif; /* updated to Comic Sans MS */
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       margin: 20px;
-      background-color: #e3f2fd; /* light blue background */
+      background-color: #e3f2fd;
       text-align: center;
     }
-    h1 {
-      color: #0d47a1; /* dark blue header */
-    }
-    form {
-      margin-bottom: 20px;
-    }
+    h1 { color: #0d47a1; }
+    form { margin-bottom: 20px; }
     select, button {
       padding: 8px 12px;
       font-size: 1em;
@@ -30,65 +26,45 @@
       color: #0d47a1;
     }
     button {
-      background-color: #2196f3; /* blue button */
+      background-color: #2196f3;
       color: #fff;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
-    button:hover {
-      background-color: #1976d2; /* darker on hover */
-    }
+    button:hover { background-color: #1976d2; }
     #back-button {
-      background-color: #0d47a1; /* darker blue for back button */
+      background-color: #0d47a1;
       color: #fff;
       margin-top: 20px;
     }
-    #back-button:hover {
-      background-color: #0b3c91;
-    }
+    #back-button:hover { background-color: #0b3c91; }
   </style>
 </head>
 <body>
-
   <h1>Select a Service</h1>
   <form id="service-form">
     <select id="service-select" required>
       <option value="">-- Choose your service --</option>
-      <option value="incorporation">Incorporation of Private Limited Company</option>
-      <option value="litigation-india">Litigation Schedule of Fees - India</option>
-      <option value="litigation-international">Litigation Schedule of Fees - International</option>
-      <option value="arbitration">Arbitration Schedule of Fees</option>
+      <option value="INCORPORATION OF PRIVATE LIMITED COMPANY.html">Incorporation of Private Limited Company</option>
+      <option value="LITIGATION SCHEDULE OF FEES.html">Litigation Schedule of Fees - India</option>
+      <option value="LITIGATION SCHEDULE OF FEES-International.html">Litigation Schedule of Fees - International</option>
+      <option value="arbitration.html">Arbitration Schedule of Fees</option>
+ 
     </select>
     <button type="submit">Submit</button>
   </form>
 
-  <!-- Back to Selection Button -->
   <button id="back-button">Back to Selection</button>
 
   <script>
     document.getElementById('service-form').addEventListener('submit', function(e) {
       e.preventDefault();
-      const selected = document.getElementById('service-select').value;
-
-      if (selected === 'incorporation') {
-        window.location.href = 'INCORPORATION OF PRIVATE LIMITED COMPANY.html';
-      }
-      else if (selected === 'litigation-india') {
-        window.location.href = 'LITIGATION SCHEDULE OF FEES.html';
-      }
-      else if (selected === 'litigation-international') {
-        window.location.href = 'LITIGATION SCHEDULE OF FEES-International.html';
-      }
-      else if (selected === 'arbitration') {
-        window.location.href = 'arbitration.html';
-      }
+      const page = document.getElementById('service-select').value;
+      if (page) window.location.href = page;
     });
-
-    // Back button handler
     document.getElementById('back-button').addEventListener('click', function() {
-      window.location.href = 'services.html'; // navigate back to the selection page
+      window.history.back();
     });
   </script>
-
 </body>
 </html>
