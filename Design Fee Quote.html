@@ -11,25 +11,19 @@
       background-color: #e3f2fd; /* light Altacit blue */
       text-align: center;
     }
-    .download-link {
-      display: inline-flex;
-      align-items: center;
-      margin-top: 10px;
-      text-decoration: none;
-      color: #0d47a1;             /* Altacit blue */
-      font-family: inherit;       /* keeps Comic Sans */
-      font-size: 1em;
+    .logo-container {
+      margin-bottom: 20px;
     }
-    .download-link img {
-      width: 24px;
-      height: 24px;
-      margin-right: 8px;
+    .logo-container img {
+      max-width: 200px;
+      height: auto;
     }
     table {
       width: 80%;
       border-collapse: collapse;
-      margin: 0 auto;
+      margin: 0 auto 20px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
     }
     caption {
       caption-side: top;
@@ -37,7 +31,6 @@
       font-weight: bold;
       margin-bottom: 10px;
       color: #0d47a1;             /* Altacit blue */
-      text-align: center;
     }
     th, td {
       border: 1px solid #ddd;
@@ -60,9 +53,40 @@
     th[colspan] {
       background-color: #0b3c91; /* darker Altacit blue */
     }
+    .download-link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #0d47a1;             /* Altacit blue */
+      font-family: inherit;
+      font-size: 1em;
+    }
+    .download-link img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    .back-btn {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #0d47a1;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 1em;
+    }
+    .back-btn:hover {
+      background-color: #094a7f;
+    }
   </style>
 </head>
 <body>
+  <div class="logo-container">
+    <img src="logo.png" alt="Altacit Global Logo" />
+  </div>
   <table>
     <caption>Commercials for Design Registration in India (INR)</caption>
     <thead>
@@ -108,11 +132,11 @@
       </tr>
     </tbody>
   </table>
-
-  <!-- PDF Download Link: place 'design-registration.pdf' and your icon/image in the same directory -->
   <a href="html_input.pdf" download class="download-link">
     <img src="download.jpg" alt="PDF Icon" />
     Download PDF
   </a>
+  <br />
+  <a href="index.html" class="back-btn">Back to Selection</a>
 </body>
 </html>
