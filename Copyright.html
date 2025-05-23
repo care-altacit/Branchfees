@@ -12,6 +12,13 @@
       text-align: center;
       font-weight: bold;
     }
+    .logo-container {
+      margin-bottom: 20px;
+    }
+    .logo-container img {
+      max-width: 200px;
+      height: auto;
+    }
     table {
       width: 80%;
       margin: 0 auto;
@@ -37,8 +44,6 @@
     th {
       background-color: #3498db;
       color: #ffffff;
-      font-family: inherit;
-      font-weight: inherit;
     }
     tbody tr:nth-child(odd) {
       background-color: #ffffff;
@@ -82,6 +87,9 @@
   </style>
 </head>
 <body>
+  <div class="logo-container">
+    <img src="logo.png" alt="Altacit Global Logo" />
+  </div>
   <table>
     <caption>COMMERCIALS FOR COPYRIGHT REGISTRATION</caption>
     <thead>
@@ -123,10 +131,11 @@
       </tr>
     </tbody>
   </table>
-  <!-- Optional: download link if needed -->
-  <!-- <a href="copyright-registration.pdf" download class="download-link">
-    <img src="download-icon.png" alt="PDF Icon" />Download PDF
-  </a> -->
+  <a href="copyright-registration.pdf" download class="download-link">
+    <img src="download-icon.png" alt="PDF Icon" />
+    Download PDF
+  </a>
+  <br />
   <a href="index.html" class="back-btn">Back to Services</a>
 </body>
 </html>
