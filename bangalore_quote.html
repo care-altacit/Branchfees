@@ -9,7 +9,8 @@
       /* Apply Comic Sans MS globally and make text bold */
       font-family: 'Comic Sans MS', cursive, sans-serif;
       font-weight: bold;
-      background: linear-gradient(45deg, lightblue, darkblue);
+      color: #000; /* Default text color black */
+      background-color: #ADD8E6; /* Light blue background */
       margin: 0;
       padding: 20px;
       display: flex;
@@ -23,13 +24,13 @@
       max-width: 200px;
       height: auto;
     }
-     .download-link {
+    .download-link {
       display: inline-flex;
       align-items: center;
       margin-top: 10px;
       text-decoration: none;
-      color: #0d47a1;             /* Altacit blue */
-      font-family: inherit;       /* keeps Comic Sans */
+      color: #0d47a1; /* Altacit blue */
+      font-family: inherit;
       font-size: 1em;
     }
     .download-link img {
@@ -38,56 +39,54 @@
       margin-right: 8px;
     }
     .container {
-      background-color: rgba(255, 255, 255, 0.95);
+      /* solid white background */
+      background-color: #ffffff;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       width: 90%;
       max-width: 900px;
       overflow-x: auto;
+      border: 1px solid #ddd;
     }
     h1 {
       text-align: center;
-      color: #333;
       margin-bottom: 20px;
-      /* inherit bold Comic Sans MS */
       font-family: inherit;
+      color: #000;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      /* ensure table inherits bold font */
       font-family: inherit;
       font-weight: inherit;
+      color: #000;
     }
     th, td {
       border: 1px solid #ddd;
       padding: 8px;
       text-align: center;
       font-size: 14px;
-      /* inherit bold Comic Sans MS */
       font-family: inherit;
       font-weight: inherit;
+      color: #000;
     }
-    th {
-      background-color: #af4261;
+    /* Header row styled to contrast */
+    thead th {
+      background-color: #0d47a1;
       color: #fff;
-      font-family: inherit;
-      font-weight: inherit;
     }
-
-    /* Category-specific row colors */
-    .search td             { background-color: #fff9c4; }
-    .filing td             { background-color: #bbdefb; }
-    .examination td        { background-color: #d1c4e9; }
-    .hearing td            { background-color: #ffe0b2; }
-    .publication td        { background-color: #c8e6c9; }
-    .opposition-for td     { background-color: #ffcdd2; }
-    .opposition-against td { background-color: #c5cae9; }
-    .registration td       { background-color: #b2dfdb; }
-    .renewal td            { background-color: #f0f4c3; }
-    .restoration td        { background-color: #f8bbd0; }
-
+    /* Category-specific row colors: blue family */
+    .search td             { background-color: #ADD8E6; } /* LightBlue */
+    .filing td             { background-color: #B0E0E6; } /* PowderBlue */
+    .examination td        { background-color: #87CEEB; } /* SkyBlue */
+    .hearing td            { background-color: #00BFFF; } /* DeepSkyBlue */
+    .publication td        { background-color: #1E90FF; } /* DodgerBlue */
+    .opposition-for td     { background-color: #6495ED; } /* CornflowerBlue */
+    .opposition-against td { background-color: #4169E1; } /* RoyalBlue */
+    .registration td       { background-color: #0000CD; } /* MediumBlue */
+    .renewal td            { background-color: #B0C4DE; } /* LightSteelBlue (lighter) */
+    .restoration td        { background-color: #B0E0E6; } /* PowderBlue (lighter) */
     .back-btn {
       margin-top: 20px;
       display: block;
@@ -95,19 +94,18 @@
       font-size: 16px;
       text-align: center;
       text-decoration: none;
-      background-color: #af4261;
+      background-color: #0d47a1;
       color: #fff;
       border-radius: 5px;
       width: 200px;
       margin: 0 auto;
       transition: background 0.3s ease;
-      /* inherit bold Comic Sans MS */
       font-family: inherit;
       font-weight: inherit;
     }
     .back-btn:hover {
-      background-color: #f3ec78;
-      color: #333;
+      background-color: #094a7f;
+      color: #fff;
     }
   </style>
 </head>
