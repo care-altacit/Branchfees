@@ -6,7 +6,6 @@
   <title>INDIA - TRADEMARK SCHEDULE OF CHARGES - 2025</title>
   <style>
     body {
-      /* Apply Comic Sans MS globally and make text bold */
       font-family: 'Comic Sans MS', cursive, sans-serif;
       font-weight: bold;
       color: #000;
@@ -18,32 +17,6 @@
       align-items: center;
       min-height: 100vh;
     }
-    .logo-container img {
-      display: block;
-      margin: 0 auto 20px;
-      max-width: 200px;
-      height: auto;
-    }
-    .download-link {
-      display: inline-flex;
-      align-items: center;
-      margin-top: 10px;
-      text-decoration: none;
-      color: #0d47a1;
-      font-family: inherit;
-      font-size: 1em;
-    }
-    .download-link img {
-      width: 24px;
-      height: 24px;
-      margin-right: 8px;
-    }
-    .note {
-      margin-top: 20px;
-      font-family: inherit;
-      font-size: 0.9em;
-      color: #000;
-    }
     .container {
       background-color: #ffffff;
       padding: 20px;
@@ -54,11 +27,17 @@
       overflow-x: auto;
       border: 1px solid #ddd;
     }
+    .logo-container img {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 200px;
+      height: auto;
+    }
     h1 {
       text-align: center;
       margin-bottom: 20px;
-      font-family: inherit;
-      color: #000;
+      color: #0d47a1;
+      font-size: 2em;
     }
     table {
       width: 100%;
@@ -72,43 +51,36 @@
       padding: 8px;
       text-align: center;
       font-size: 14px;
-      font-family: inherit;
-      font-weight: inherit;
-      color: #000;
     }
-    /* Header row styled to contrast */
     thead th {
       background-color: #0d47a1;
       color: #fff;
     }
-    /* Grouped pastel blues by service category */
-    /* Search */
-    tbody tr:nth-child(1) td { background-color: #E3F2FD; }
-    /* Filing */
-    tbody tr:nth-child(2) td,
-    tbody tr:nth-child(3) td { background-color: #BBDEFB; }
-    /* Examination */
-    tbody tr:nth-child(4) td,
-    tbody tr:nth-child(5) td { background-color: #90CAF9; }
-    /* Hearing */
-    tbody tr:nth-child(6) td { background-color: #E1F5FE; }
-    /* Publication */
-    tbody tr:nth-child(7) td { background-color: #B3E5FC; }
-    /* Opposition filed on your behalf */
-    tbody tr:nth-child(8) td,
-    tbody tr:nth-child(9) td,
-    tbody tr:nth-child(10) td { background-color: #81D4FA; }
-    /* Opposition filed against you */
-    tbody tr:nth-child(11) td,
-    tbody tr:nth-child(12) td { background-color: #4FC3F7; }
-    /* Opposition Hearing */
-    tbody tr:nth-child(13) td { background-color: #E0F7FA; }
-    /* Registration */
-    tbody tr:nth-child(14) td { background-color: #B2EBF2; }
-    /* Renewal */
-    tbody tr:nth-child(15) td { background-color: #80DEEA; }
-    /* Restoration */
-    tbody tr:nth-child(16) td { background-color: #4DD0E1; }
+    /* Group 1: Search through Restoration */
+    tbody tr:nth-child(-n+10) td {
+      background-color: #81D4FA;
+    }
+    /* Group 2: Opposition categories */
+    tbody tr:nth-child(n+11) td {
+      background-color: #BBDEFB;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+    .download-link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #0d47a1;
+      font-size: 1em;
+    }
+    .download-link img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
     .back-btn {
       margin-top: 20px;
       display: block;
@@ -122,13 +94,8 @@
       width: 200px;
       margin: 0 auto;
       transition: background 0.3s ease;
-      font-family: inherit;
-      font-weight: inherit;
     }
-    .back-btn:hover {
-      background-color: #094a7f;
-      color: #fff;
-    }
+    .back-btn:hover { background-color: #094a7f; }
   </style>
 </head>
 <body>
@@ -152,6 +119,7 @@
         </tr>
       </thead>
       <tbody>
+        <!-- Search -->
         <tr>
           <td>1</td>
           <td>Search</td>
@@ -160,6 +128,7 @@
           <td>N/A</td>
           <td>N/A</td>
         </tr>
+        <!-- Filing -->
         <tr>
           <td>2</td>
           <td rowspan="2">Filing</td>
@@ -175,6 +144,7 @@
           <td>N/A</td>
           <td>N/A</td>
         </tr>
+        <!-- Examination -->
         <tr>
           <td>4</td>
           <td rowspan="2">Examination</td>
@@ -190,6 +160,7 @@
           <td>N/A</td>
           <td>N/A</td>
         </tr>
+        <!-- Hearing -->
         <tr>
           <td>6</td>
           <td>Hearing</td>
@@ -198,6 +169,7 @@
           <td>N/A</td>
           <td>N/A</td>
         </tr>
+        <!-- Publication -->
         <tr>
           <td>7</td>
           <td>Publication</td>
@@ -206,8 +178,34 @@
           <td>N/A</td>
           <td>N/A</td>
         </tr>
+        <!-- Registration -->
         <tr>
           <td>8</td>
+          <td>Registration</td>
+          <td>Following up for Registration Certificate and reporting upon receipt</td>
+          <td>Rs. 3000/-</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <!-- Renewal -->
+        <tr>
+          <td>9</td>
+          <td>Renewal</td>
+          <td>Filing Renewal within the due date</td>
+          <td>Rs. 5000/-</td>
+          <td colspan="2">Rs. 9000/-</td>
+        </tr>
+        <!-- Restoration -->
+        <tr>
+          <td>10</td>
+          <td>Restoration</td>
+          <td>Filing Restoration within 6 months after due date</td>
+          <td>Rs. 7000/-</td>
+          <td colspan="2">Rs. 9000 + Rs. 4500 (Surcharge)</td>
+        </tr>
+        <!-- Opposition filed on your behalf -->
+        <tr>
+          <td>11</td>
           <td rowspan="3">Opposition filed on your behalf</td>
           <td>Notice of Opposition</td>
           <td>Rs. 15,000/-</td>
@@ -215,21 +213,22 @@
           <td>Rs. 2,700/-</td>
         </tr>
         <tr>
-          <td>9</td>
+          <td>12</td>
           <td>Evidence in Support of the Opposition</td>
           <td>Rs. 25,000/-</td>
           <td>N/A</td>
           <td>N/A</td>
         </tr>
         <tr>
-          <td>10</td>
+          <td>13</td>
           <td>Reply Evidence</td>
           <td>Rs. 10,000/-</td>
           <td>N/A</td>
           <td>N/A</td>
         </tr>
+        <!-- Opposition filed against you -->
         <tr>
-          <td>11</td>
+          <td>14</td>
           <td rowspan="2">Opposition filed against you</td>
           <td>Counter-Statement</td>
           <td>Rs. 15,000/-</td>
@@ -237,45 +236,24 @@
           <td>N/A</td>
         </tr>
         <tr>
-          <td>12</td>
+          <td>15</td>
           <td>Evidence in Support of the Application</td>
           <td>Rs. 25,000/-</td>
           <td>N/A</td>
           <td>N/A</td>
         </tr>
-        <tr>
-          <td>13</td>
-          <td>Opposition Hearing</td>
-          <td>Opposition Hearing</td>
-          <td>Rs. 5000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
-        </tr>
-        <tr>
-          <td>14</td>
-          <td>Registration</td>
-          <td>Following up for Registration Certificate and reporting upon receipt</td>
-          <td>Rs. 3000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
-        </tr>
-        <tr>
-          <td>15</td>
-          <td>Renewal</td>
-          <td>Filing Renewal within the due date</td>
-          <td>Rs. 5000/-</td>
-          <td colspan="2">Rs. 9000/-</td>
-        </tr>
+        <!-- Opposition Hearing -->
         <tr>
           <td>16</td>
-          <td>Restoration</td>
-          <td>Filing Restoration within 6 months after due date</td>
-          <td>Rs. 7000/-</td>
-          <td colspan="2">Rs. 9000 + Rs. 4500 (Surcharge)</td>
+          <td>Opposition</td>
+          <td>Opposition Hearing</td>
+          <td>Rs. 5000/-</td>
+          <td>N/A</td>
+          <td>N/A</td>
         </tr>
       </tbody>
     </table>
-    <p class="note">*All disbursements and related expenses are chargeable at actuals.*</p>
+    <p class="note">*All disbursements and related expenses are chargeable at actuals.</p>
     <a href="FINAL TRADEMARK FEES.pdf" download class="download-link">
       <img src="download.jpg" alt="PDF Icon" />
       Download PDF
