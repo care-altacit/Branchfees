@@ -46,11 +46,22 @@
       font-weight: inherit;
       color: #000;
     }
-    th, td {
+    th {
       border: 1px solid #ddd;
       padding: 8px;
       text-align: center;
       font-size: 14px;
+    }
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: justify;
+      text-justify: inter-word;
+      font-size: 14px;
+    }
+    td.amount {
+      text-align: center;
+      text-justify: none;
     }
     thead th {
       background-color: #0d47a1;
@@ -110,8 +121,8 @@
           <th rowspan="2">SL.NO</th>
           <th rowspan="2">Service</th>
           <th rowspan="2">Particulars</th>
-          <th rowspan="2">Professional Fee (per mark / per class)</th>
           <th colspan="2">Government Fee (per mark / per class)</th>
+          <th rowspan="2">Professional Fee (per mark / per class)</th>
         </tr>
         <tr>
           <th>Individual / Start Up / Small Entity</th>
@@ -119,137 +130,126 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Search -->
         <tr>
           <td>1</td>
           <td>Search</td>
           <td>Search using commercial database with report analysis</td>
-          <td>Rs. 1000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 1000/-</td>
         </tr>
-        <!-- Filing -->
         <tr>
           <td>2</td>
           <td rowspan="2">Filing</td>
           <td>Filing Application in one class</td>
-          <td>Rs. 7500/-</td>
-          <td>Rs. 4500/-</td>
-          <td>Rs. 9000/-</td>
+          <td class="amount">Rs. 4500/-</td>
+          <td class="amount">Rs. 9000/-</td>
+          <td class="amount">Rs. 7500/-</td>
         </tr>
         <tr>
           <td>3</td>
           <td>User Affidavit (if Mark in Usage)</td>
-          <td>Rs. 3000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 3000/-</td>
         </tr>
-        <!-- Examination -->
         <tr>
           <td>4</td>
           <td rowspan="2">Examination</td>
           <td>Handling Formality Checks</td>
-          <td>Rs. 4000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 4000/-</td>
         </tr>
         <tr>
           <td>5</td>
           <td>Handling objections / Examination Reports</td>
-          <td>Rs. 5000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 5000/-</td>
         </tr>
-        <!-- Hearing -->
         <tr>
           <td>6</td>
           <td>Hearing</td>
           <td>Hearing (per occasion), if it arises</td>
-          <td>Rs. 4000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 4000/-</td>
         </tr>
-        <!-- Publication -->
         <tr>
           <td>7</td>
           <td>Publication</td>
           <td>Trademark Journal watch, check for errors in publications and reporting of publication to the client</td>
-          <td>Rs. 1000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 1000/-</td>
         </tr>
-        <!-- Registration -->
         <tr>
           <td>8</td>
           <td>Registration</td>
           <td>Following up for Registration Certificate and reporting upon receipt</td>
-          <td>Rs. 3000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 3000/-</td>
         </tr>
-        <!-- Renewal -->
         <tr>
           <td>9</td>
           <td>Renewal</td>
           <td>Filing Renewal within the due date</td>
-          <td>Rs. 5000/-</td>
-          <td colspan="2">Rs. 9000/-</td>
+          <td colspan="2" class="amount">Rs. 9000/-</td>
+          <td class="amount">Rs. 5000/-</td>
         </tr>
-        <!-- Restoration -->
         <tr>
           <td>10</td>
           <td>Restoration</td>
           <td>Filing Restoration within 6 months after due date</td>
-          <td>Rs. 7000/-</td>
-          <td colspan="2">Rs. 9000 + Rs. 4500 (Surcharge)</td>
+          <td colspan="2" class="amount">Rs. 9000 + Rs. 4500 (Surcharge)</td>
+          <td class="amount">Rs. 7000/-</td>
         </tr>
-        <!-- Opposition filed on your behalf -->
         <tr>
           <td>11</td>
           <td rowspan="3">Opposition filed on your behalf</td>
           <td>Notice of Opposition</td>
-          <td>Rs. 15,000/-</td>
-          <td>Rs. 2,700/-</td>
-          <td>Rs. 2,700/-</td>
+          <td class="amount">Rs. 2,700/-</td>
+          <td class="amount">Rs. 2,700/-</td>
+          <td class="amount">Rs. 15,000/-</td>
         </tr>
         <tr>
           <td>12</td>
           <td>Evidence in Support of the Opposition</td>
-          <td>Rs. 25,000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 25,000/-</td>
         </tr>
         <tr>
           <td>13</td>
           <td>Reply Evidence</td>
-          <td>Rs. 10,000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 10,000/-</td>
         </tr>
-        <!-- Opposition filed against you -->
         <tr>
           <td>14</td>
           <td rowspan="2">Opposition filed against you</td>
           <td>Counter-Statement</td>
-          <td>Rs. 15,000/-</td>
-          <td>Rs. 2,700/-</td>
-          <td>N/A</td>
+          <td class="amount">Rs. 2,700/-</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 15,000/-</td>
         </tr>
         <tr>
           <td>15</td>
           <td>Evidence in Support of the Application</td>
-          <td>Rs. 25,000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 25,000/-</td>
         </tr>
-        <!-- Opposition Hearing -->
         <tr>
           <td>16</td>
           <td>Opposition</td>
           <td>Opposition Hearing</td>
-          <td>Rs. 5000/-</td>
-          <td>N/A</td>
-          <td>N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">N/A</td>
+          <td class="amount">Rs. 5000/-</td>
         </tr>
       </tbody>
     </table>
