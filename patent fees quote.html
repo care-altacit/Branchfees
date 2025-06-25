@@ -1,65 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Patent Fee Quote</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      font-family: 'Poppins', sans-serif;
+      background: #f0f4f8;
       margin: 0;
       padding: 20px;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       min-height: 100vh;
     }
     .container {
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: #fff;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      width: 90%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
       max-width: 900px;
       overflow-x: auto;
     }
     h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
       text-align: center;
       color: #333;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      font-size: 14px;
-    }
-    th {
-      background-color: #2575fc;
-      color: #fff;
-      text-align: center;
-    }
-    td {
-      text-align: justify;
-      text-justify: inter-word;
-    }
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-    .light-blue-background {
-      background-color: #ADD8E6;
-      color: #000;
-      font-weight: bold;
-      text-align: center;
-    }
-    .professional-fees-title, .government-fees-title {
+    .professional-fees-title,
+    .government-fees-title {
       font-size: 1.2em;
       color: #ff6347;
       margin: 15px 0 5px;
+      font-weight: 600;
     }
     .section-title {
       font-size: 1.5em;
@@ -67,7 +44,51 @@
       background-color: #00008B;
       color: #fff;
       padding: 10px 0;
-      margin: 5px 0 15px;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    thead th {
+      background-color: #1976d2;
+      color: #fff;
+      padding: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+    }
+    tbody td {
+      padding: 8px;
+      color: #555;
+      border: 1px solid #ddd;
+      text-align: justify;
+    }
+    td:nth-child(1),
+    td:nth-child(2) {
+      padding-left: 20px;
+      text-align: left;
+    }
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5) {
+      text-align: center;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9fbfc;
+    }
+    tbody tr:hover {
+      background-color: #f1f8ff;
+    }
+    .light-blue-background {
+      background-color: #ADD8E6;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
     }
     .back-btn {
       display: block;
@@ -79,9 +100,14 @@
       text-decoration: none;
       border-radius: 5px;
       width: 200px;
+      font-weight: 600;
     }
     .back-btn:hover {
       background-color: #6a11cb;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.4rem; }
+      thead th, tbody td { padding: 6px; font-size: 12px; }
     }
   </style>
 </head>
@@ -94,9 +120,14 @@
     <div class="section-title">Altacit Global Professional Fees (India)</div>
     <table>
       <thead>
-        <tr><th>S.No.</th><th>Service</th><th>Professional Fees (INR)</th></tr>
+        <tr>
+          <th>S.No.</th>
+          <th>Service</th>
+          <th>Professional Fees (INR)</th>
+        </tr>
       </thead>
       <tbody>
+     <tr><td colspan="3" class="light-blue-background"><center>Filing Stage</center></td></tr>
         <tr><td>1</td><td>Patent Prior Art Search</td><td>₹ 30,000</td></tr>
         <tr><td>2</td><td>Drafting Provisional Specification</td><td>₹ 20,000</td></tr>
         <tr><td>3</td><td>Filing Provisional Patent Application</td><td>₹ 15,000</td></tr>
@@ -107,15 +138,15 @@
         <tr><td>8</td><td>Request For Expedited Examination</td><td>₹ 5,000</td></tr>
         <tr><td>9</td><td>Form 28 (Small Entity/Startup)</td><td>₹ 3,000</td></tr>
         <tr><td>10</td><td>Filing NBA Application</td><td>₹ 5,000</td></tr>
-        <tr><td colspan="3" class="light-blue-background">Prosecution Stage</td></tr>
+        <tr><td colspan="3" class="light-blue-background"><center>Prosecution Stage</center></td></tr>
         <tr><td>11</td><td>Report First Examination Report</td><td>N/A</td></tr>
         <tr><td>12</td><td>Request for Extension of Time</td><td>₹ 5,000</td></tr>
         <tr><td>13</td><td>Preparing Response to Examination Report</td><td>₹ 35,000</td></tr>
-        <tr><td>14</td><td>Filing Form 3 (Statement & Undertaking)</td><td>₹ 5,000</td></tr>
+        <tr><td>14</td><td>Filing Form 3 (Statement &amp; Undertaking)</td><td>₹ 5,000</td></tr>
         <tr><td>15</td><td>Attending Hearing</td><td>₹ 10,000</td></tr>
-        <tr><td>16</td><td>Preparing & Filing Hearing Compliance</td><td>₹ 30,000</td></tr>
+        <tr><td>16</td><td>Preparing &amp; Filing Hearing Compliance</td><td>₹ 30,000</td></tr>
         <tr><td>17</td><td>Reporting Grant Certificate</td><td>₹ 5,000</td></tr>
-        <tr><td colspan="3" class="light-blue-background">Maintenance Stage</td></tr>
+        <tr><td colspan="3" class="light-blue-background"><center>Maintenance Stage</center></td></tr>
         <tr><td>18</td><td>Renewal of Patent (Per Instance)</td><td>₹ 5,000</td></tr>
         <tr><td>19</td><td>Filing Form 27 – Working of Statement (Every 3rd Year)</td><td>₹ 5,000</td></tr>
       </tbody>
@@ -126,10 +157,15 @@
     <div class="section-title">Indian Patent Office Fees (INR)</div>
     <table>
       <thead>
-        <tr><th>S.No.</th><th>Service</th><th>Individual/Startup/Small Entity/Educational Institution</th><th>Others</th></tr>
+        <tr>
+          <th>S.No.</th>
+          <th>Service</th>
+          <th>Individual/Startup/Small Entity/Educational Institution</th>
+          <th>Others</th>
+        </tr>
       </thead>
       <tbody>
-        <tr><td colspan="4" class="light-blue-background">Filing Stage</td></tr>
+        <tr><td colspan="4" class="light-blue-background"><center>Filing Stage</center></td></tr>
         <tr><td>1</td><td>Application for Filing a Patent</td><td>₹ 1,600</td><td>₹ 8,000</td></tr>
         <tr><td>1.1</td><td>Extra page above 30</td><td>₹ 160</td><td>₹ 800</td></tr>
         <tr><td>1.2</td><td>Each claim above 10</td><td>₹ 320</td><td>₹ 1,600</td></tr>
@@ -138,7 +174,7 @@
         <tr><td>3</td><td>Request For Examination</td><td>₹ 4,000</td><td>₹ 20,000</td></tr>
         <tr><td>4</td><td>Request For Expedited Examination</td><td>₹ 8,000</td><td>₹ 60,000</td></tr>
         <tr><td>5</td><td>Filing NBA Application</td><td>₹ 500</td><td>₹ 500</td></tr>
-        <tr><td colspan="4" class="light-blue-background">Others</td></tr>
+        <tr><td colspan="4" class="light-blue-background"><center>Others</center></td></tr>
         <tr><td>6</td><td>Extension of Time</td><td>₹ 480–₹ 2,000</td><td>₹ 2,400–₹ 10,000</td></tr>
         <tr><td>7</td><td>Post Grant Opposition</td><td>₹ 2,400</td><td>₹ 12,000</td></tr>
         <tr><td>8</td><td>Renewal of Patent (3rd–6th yr)</td><td>₹ 800</td><td>₹ 4,000</td></tr>
@@ -153,7 +189,11 @@
     <div class="section-title">PCT International Patent Application Fees</div>
     <table>
       <thead>
-        <tr><th>Service</th><th>Government Fees*</th><th>Professional Fees (INR)</th></tr>
+        <tr>
+          <th>Service</th>
+          <th>Government Fees*</th>
+          <th>Professional Fees (INR)</th>
+        </tr>
       </thead>
       <tbody>
         <tr><td>International Filing</td><td>USD 1,500</td><td>₹ 40,000</td></tr>
@@ -167,7 +207,7 @@
         <tr><td>United States Patent Office</td><td>USD 2,180</td><td>N/A</td></tr>
       </tbody>
     </table>
-    *All disbursements and related expenses are chargeable at actuals.
+    <p>*All disbursements and related expenses are chargeable at actuals.</p>
 
     <a href="index.html" class="back-btn">Back</a>
   </div>
